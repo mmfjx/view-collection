@@ -1,5 +1,6 @@
 import Home from '../pages/home/index.vue';
 import RadialForce from '../pages/radialForce/index.vue';
+
 const router = [
     {
         path: '/',

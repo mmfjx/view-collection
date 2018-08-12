@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <router-link :to="{ name: 'home'}">home</router-link>
-    <router-link :to="{ name: 'radialForce'}">radialForce</router-link>
-   <router-view :key="$route.fullPath">
-   </router-view>
+    <router-link to="/" class="margin-right">home</router-link>
+    <router-link to="/radialForce">radialForce</router-link>
+    <div>
+        <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -13,7 +14,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,4 +23,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.margin-right {
+    margin-right: 30px;
+}
+
 </style>

@@ -3,6 +3,6 @@ import VueRouter from 'vue-router';
 import config from './router.config';
 Vue.use(VueRouter);
 const router = new VueRouter({
-    router: config
+    routes: config
 });
-export default  router;
+export default router;

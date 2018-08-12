@@ -1,5 +1,7 @@
 <template>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+        <hello-world :msg="msg"></hello-world>
+    </div>
 </template>
 
 <script type="text/javascript">
@@ -16,8 +18,9 @@ export default {
     },
     // 变量
     data () {
-        return {
 
+        return {
+            msg: 'Welcome to Your Vue.js App'
         }
 
     },
