@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <router-link to="/" class="margin-right">home</router-link>
-    <router-link to="/radialForce">radialForce</router-link>
     <div>
         <router-view></router-view>
     </div>

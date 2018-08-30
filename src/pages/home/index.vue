@@ -1,11 +1,18 @@
 <template>
-    <div>
-        <hello-world :msg="msg"></hello-world>
-    </div>
+    <ul>
+        <li>
+            <router-link to="/" class="margin-right">home</router-link>
+        </li>
+        <li>
+            <router-link to="/miserables">miserables</router-link>
+        </li>
+        <li>
+            <router-link to="/bpmn">bpmn</router-link>
+        </li>
+    </ul>
 </template>
 
 <script type="text/javascript">
-import helloWorld from '../../components/HelloWorld';
 export default {
     // 不要忘记了 name 属性
     name: 'home',
@@ -20,14 +27,12 @@ export default {
     data () {
 
         return {
-            msg: 'Welcome to Your Vue.js App'
         }
 
     },
     computed: {},
     // 使用其它组件
     components: {
-        helloWorld
     },
     // 方法
     watch: {},

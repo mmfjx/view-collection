@@ -1,5 +1,6 @@
 import Home from '../pages/home/index.vue';
-import RadialForce from '../pages/radialForce/index.vue';
+import Miserables from '../pages/miserables/index.vue';
+import Bpmn from '../pages/bpmn/index.vue';
 
 const router = [
     {
@@ -8,9 +9,14 @@ const router = [
         component: Home
     },
     {
-        path: '/radialForce',
-        name : 'radialForce',
-        component: RadialForce
+        path: '/miserables',
+        name : 'miserables',
+        component: Miserables
+    },
+    {
+        path: '/bpmn',
+        name : 'bpmn',
+        component: Bpmn
     }
 ];
 
